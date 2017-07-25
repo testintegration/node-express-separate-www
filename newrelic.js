@@ -6,10 +6,14 @@ const config = require('config');
  * See lib/config.defaults.js in the agent distribution for a more complete
  * description of configuration variables and their potential values.
  */
+console.log(process.env.NODE_ENV);
+//window.aaa = config;
+
 exports.config = {
   /**
    * Array of application names.
    */
+
   app_name: [config.get("NEW_RELIC.APP_NAME")],
   /**
    * Your New Relic license key.
