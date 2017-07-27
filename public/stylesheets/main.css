@@ -1,0 +1,79 @@
+html * {
+  font-family: 'Source Sans Pro', serif;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  color: #000;
+  position: relative;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+footer {
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow:hidden;
+}
+
+.col-xs-10ths,
+.col-sm-10ths,
+.col-md-10ths,
+.col-lg-10ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-10ths {
+  width: 10%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-10ths {
+    width: 10%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-10ths {
+    width: 10%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-10ths {
+    width: 10%;
+    float: left;
+  }
+}
+
+.height-70 {
+  width: 100%;
+  height: 70px;
+}
+
+.height-80 {
+  width: 100%;
+  height: 80px;
+}
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
